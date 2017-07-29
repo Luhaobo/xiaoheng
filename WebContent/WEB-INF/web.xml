@@ -8,7 +8,7 @@
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
-            classpath:config/applicationContext.xml
+            classpath:applicationContext.xml
         </param-value>
 	</context-param>
 	<!-- 配置Spring上下文监听器 -->
@@ -35,7 +35,7 @@
 	<!-- 配置log4j配置文件路径 -->
 	<context-param>
 		<param-name>log4jConfigLocation</param-name>
-		<param-value>classpath:config/log4j.properties</param-value>
+		<param-value>classpath:log4j.properties</param-value>
 	</context-param>
 	<!-- 配置Log4j监听器 -->
 	<listener>
@@ -48,7 +48,7 @@
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
-			<param-value>classpath*:config/spring-mvc.xml</param-value>
+			<param-value>classpath:spring-mvc.xml</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
